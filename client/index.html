@@ -13,9 +13,17 @@
     <script src="scripts/app.js"></script>
   </head>
   <body>
+    <div id="nav">
+      </div>
     <div id="main">
       <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
+      <span>Room: <select class="rooms" id="roomSelect"></select></span>
+      <button type="button" id="clear">Clear Messages</button>
+      <form>
+        <input type="text" placeholder="Please enter your message" id="messageInput" />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="chats"></div>
     </div>
   </body>
 </html>

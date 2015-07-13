@@ -57,6 +57,7 @@ form input[type=text] {
     width: 70%;
     font-size: 12px;
     padding: 5px;
+    border-radius: 4px;
 }
 
 .chat {
@@ -81,4 +82,8 @@ form input[type=text] {
 
 .spinner img {
     padding: 10px;
+}
+
+.rooms {
+    width: 150px;  
 }
