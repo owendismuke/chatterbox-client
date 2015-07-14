@@ -104,6 +104,7 @@ App.prototype.send = function(message){
 App.prototype.addMessage = function(message){
   //check for highlighted words for rolling of the rick
   if (!message || !message.text || !message.text.length) { return; }
+  if (!message || !message.username || !message.username.length) { return; }
   if (message.roomname) { this.addRoom(message.roomname); }
   if (this._currentRoom && this._currentRoom !== message.roomname) { return; }
   if (this._lastReceivedMessage === message.text) { return; }
