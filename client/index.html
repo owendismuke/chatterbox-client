@@ -18,10 +18,11 @@
     <div id="main">
       <h1>chatterbox</h1>
       <span>Room: <select class="rooms" id="roomSelect"></select></span>
-      <button type="button" id="clear">Clear Messages</button>
-      <form>
+      <button type="button" id="newRoom">Add a Room</button>
+      <div id="roomAdd"><input type="text" id="roomName" placeholder="New Room Name" /><button type="button" id="addRoom">Add Room</button></div>
+      <form id="chatForm">
         <input type="text" placeholder="Please enter your message" id="messageInput" />
-        <button type="submit">Submit</button>
+        <button class="submit" type="submit">Submit</button>
       </form>
       <div id="chats"></div>
     </div>
